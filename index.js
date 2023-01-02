@@ -1,16 +1,23 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let normalOrderWord = word
+  let reverseOrderWord = word.split("").reverse().join("");
+  return normalOrderWord === reverseOrderWord;
 }
 
-/* 
-  Add your pseudocode here
+/*
+Function that takes any string as an argument
+Code reads the string = Variable A
+Code reverses the string = Variable B
+If Variable A = Variable B, True
+If Variable A =/ Variable B, False
 */
 
 /*
-  Add written explanation of your solution here
+Reverse the string passed to the isPalindrome function, then set equal to normal order string
 */
 
 // You can run `node index.js` to view these console logs
+
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
